@@ -4,7 +4,7 @@ import 'package:satellite_app/data/repository/auth_repository.dart';
 import 'package:satellite_app/domain/entity/auth/auth_email_part2_request.dart';
 import 'package:satellite_app/domain/use_case/profile_use_case.dart';
 import 'package:satellite_app/internal/app_components.dart';
-import '../../util/wm_extensions.dart';
+import 'package:satellite_app/util/wm_extensions.dart';
 import 'auth_code_page_model.dart';
 import 'auth_code_page_widget.dart';
 

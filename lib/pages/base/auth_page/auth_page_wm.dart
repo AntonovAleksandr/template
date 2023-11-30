@@ -2,13 +2,13 @@ import 'package:dio/dio.dart';
 import 'package:elementary/elementary.dart';
 
 import 'package:flutter/material.dart';
+import 'package:satellite_app/data/repository/auth_repository.dart';
 import 'package:satellite_app/domain/entity/auth/auth_email_part1_request.dart';
 import 'package:satellite_app/internal/app_components.dart';
 import 'package:satellite_app/internal/logger.dart';
 import 'package:satellite_app/router/app_router.dart';
 import 'package:satellite_app/util/snack_bar_util.dart';
 import 'package:satellite_app/util/wm_extensions.dart';
-import '../../data/repository/auth_repository.dart';
 import 'auth_page_model.dart';
 import 'auth_page_widget.dart';
 
