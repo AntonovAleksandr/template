@@ -49,7 +49,7 @@ class AuthCodePageWidget extends ElementaryWidget<IAuthCodePageWidgetModel> {
         toolbarHeight: 54,
         centerTitle: true,
         title: const Text(
-         'Вход',
+          'Вход',
         ),
       ),
       body: Center(
@@ -75,8 +75,8 @@ class AuthCodePageWidget extends ElementaryWidget<IAuthCodePageWidgetModel> {
                   height: 50,
                   child: FilledButton(
                     style: theme.filledButtonTheme.style?.copyWith(
-                        fixedSize:
-                            const MaterialStatePropertyAll(Size.fromHeight(50))),
+                        fixedSize: const MaterialStatePropertyAll(
+                            Size.fromHeight(50))),
                     onPressed: () {
                       wm.confirmCode();
                       router.popUntilRoot();

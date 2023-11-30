@@ -14,7 +14,6 @@ import 'register_page_widget.dart';
 
 abstract class IRegisterPageWidgetModel extends IWidgetModel
     implements IThemeProvider {
-
   ValueStreamWrapper<String> get genderController;
 
   AuthRepository get authRepository;
@@ -72,13 +71,13 @@ class RegisterPageWidgetModel
   @override
   Future<void> onRegister() async {
     final request = Profile(
-        email: emailController.text,
-        firstName: firstNameController.text,
-        secondName: secondNameController.text,
-        phone: phoneNumber.text,
-        birthDate: bitrhdayController.text,
-        gender: genderController.value,
-       );
+      email: emailController.text,
+      firstName: firstNameController.text,
+      secondName: secondNameController.text,
+      phone: phoneNumber.text,
+      birthDate: bitrhdayController.text,
+      gender: genderController.value,
+    );
 
     try {
       await authRepository.register(profile: request);

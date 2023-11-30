@@ -96,7 +96,7 @@ class RegisterPageWidget extends ElementaryWidget<IRegisterPageWidgetModel> {
                             labelText: 'Номер телефона',
                           ),
                         ),
-                         const SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
                         TextField(
@@ -156,8 +156,8 @@ class RegisterPageWidget extends ElementaryWidget<IRegisterPageWidgetModel> {
                   height: 82,
                   child: FilledButton(
                     style: theme.filledButtonTheme.style?.copyWith(
-                        fixedSize:
-                            const MaterialStatePropertyAll(Size.fromHeight(50))),
+                        fixedSize: const MaterialStatePropertyAll(
+                            Size.fromHeight(50))),
                     onPressed: wm.onRegister,
                     child: const Center(child: Text('Получить смс')),
                   ),
@@ -222,7 +222,7 @@ class _GenderCheckbox extends StatelessWidget {
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: theme.primaryColor,
-                  border:  Border.all(
+                  border: Border.all(
                     color: Colors.white,
                     width: 1,
                   ),

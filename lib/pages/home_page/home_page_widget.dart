@@ -46,7 +46,7 @@ class _MobilePage extends StatelessWidget {
             ),
             NavigationDestination(
               label: 'Поиск',
-               icon: Icon(Icons.map),
+              icon: Icon(Icons.map),
             ),
             NavigationDestination(
               label: 'Профиль',

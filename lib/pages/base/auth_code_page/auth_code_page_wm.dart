@@ -45,7 +45,6 @@ class AuthCodePageWidgetModel
       ),
     );
     profileUseCase.loadProfile();
-
   }
 
   AuthCodePageWidgetModel(AuthCodePageModel model) : super(model);

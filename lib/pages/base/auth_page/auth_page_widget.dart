@@ -36,7 +36,10 @@ class AuthPageWidget extends ElementaryWidget<IAuthPageWidgetModel> {
               children: [
                 Card(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 32,),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 32,
+                    ),
                     child: TextField(
                       textAlign: TextAlign.start,
                       controller: wm.emailController,
@@ -56,8 +59,8 @@ class AuthPageWidget extends ElementaryWidget<IAuthPageWidgetModel> {
                   height: 82,
                   child: FilledButton(
                     style: theme.filledButtonTheme.style?.copyWith(
-                        fixedSize:
-                            const MaterialStatePropertyAll(Size.fromHeight(50))),
+                        fixedSize: const MaterialStatePropertyAll(
+                            Size.fromHeight(50))),
                     onPressed: wm.onSendCode,
                     child: const Center(
                       child: Text('Получить код'),

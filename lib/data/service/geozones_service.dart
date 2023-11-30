@@ -19,7 +19,7 @@ abstract class GeozonesService {
   @POST('/geozones/deprecated/')
   Future<List<Geozone>> postDeprecated({
     @Body() required List<Geozone> request,
-});
+  });
 
   @POST('/geozones/zones/')
   Future<Geozone> postZones({

@@ -4,7 +4,6 @@ import 'package:hotel_writer/domain/models/profile.dart';
 import 'package:hotel_writer/util/lifecycle_component.dart';
 import 'package:hotel_writer/util/value_stream_wrapper.dart';
 
-
 class ProfileUseCase implements LifecycleComponent {
   final TokenRepository repository;
   final AuthRepository authRepository;

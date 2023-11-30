@@ -8,7 +8,6 @@ abstract interface class IThemeProvider {
 
   ColorScheme get colorScheme;
 
-
   StackRouter get router;
 }
 

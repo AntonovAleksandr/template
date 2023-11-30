@@ -37,5 +37,4 @@ abstract class AuthService {
 
   @POST(AuthUrl.authRegister)
   Future<void> register({@Body() required Profile profile});
-
 }

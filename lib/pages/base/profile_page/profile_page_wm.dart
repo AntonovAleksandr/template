@@ -60,7 +60,7 @@ class ProfilePageWidgetModel
   @override
   void initWidgetModel() {
     super.initWidgetModel();
-    if(profileUseCase.profile.valueOrNull != null) {
+    if (profileUseCase.profile.valueOrNull != null) {
       profileController.add(profileUseCase.profile.value);
     }
 
@@ -111,7 +111,7 @@ class ProfilePageWidgetModel
   @override
   void onEditProfileTap() {
     onUnauthorisedTap(() {
-      router.push( EditProfileRoute());
+      router.push(EditProfileRoute());
     });
   }
 
@@ -184,9 +184,7 @@ class ProfilePageWidgetModel
   final brandController = TextEditingController();
 
   @override
-  void onAabout() {
-
-  }
+  void onAabout() {}
 
   @override
   void onMyOrder() {

@@ -40,7 +40,6 @@ class EditProfilePageWidget
                     child: Column(
                       children: [
                         TextField(
-
                           controller: wm.firstNameController,
                           style: theme.textTheme.bodyMedium?.copyWith(
                             color: theme.colorScheme.onBackground,
@@ -148,8 +147,8 @@ class EditProfilePageWidget
                         ),
                         OutlinedButton(
                           style: theme.filledButtonTheme.style?.copyWith(
-                              fixedSize:
-                              const MaterialStatePropertyAll(Size.fromHeight(50))),
+                              fixedSize: const MaterialStatePropertyAll(
+                                  Size.fromHeight(50))),
                           onPressed: wm.onEditProfile,
                           child: const Center(child: Text('Сохранить')),
                         ),
@@ -164,8 +163,8 @@ class EditProfilePageWidget
                     height: 50,
                     child: FilledButton(
                       style: theme.filledButtonTheme.style?.copyWith(
-                          fixedSize:
-                          const MaterialStatePropertyAll(Size.fromHeight(50))),
+                          fixedSize: const MaterialStatePropertyAll(
+                              Size.fromHeight(50))),
                       onPressed: wm.profileUseCase.logout,
                       child: const Center(child: Text('Разлогиниться')),
                     ),
@@ -231,7 +230,7 @@ class _GenderCheckbox extends StatelessWidget {
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: theme.primaryColor,
-                  border:  Border.all(
+                  border: Border.all(
                     color: Colors.white,
                     width: 1,
                   ),

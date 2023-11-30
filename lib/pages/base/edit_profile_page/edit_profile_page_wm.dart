@@ -68,7 +68,6 @@ class EditProfilePageWidgetModel
   @override
   BehaviorSubject<Profile?> profileController = BehaviorSubject<Profile?>();
 
-
   @override
   void initWidgetModel() {
     super.initWidgetModel();
