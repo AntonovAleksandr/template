@@ -60,23 +60,6 @@ abstract class _$AppRouter extends RootStackRouter {
         ),
       );
     },
-    MapRoute.name: (routeData) {
-      final args =
-          routeData.argsAs<MapRouteArgs>(orElse: () => const MapRouteArgs());
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: MapPageWidget(
-          key: args.key,
-          wmFactory: args.wmFactory,
-        ),
-      );
-    },
-    MapTab.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const MapTabPage(),
-      );
-    },
     OrderViewRoute.name: (routeData) {
       final args = routeData.argsAs<OrderViewRouteArgs>();
       return AutoRoutePage<dynamic>(
@@ -84,17 +67,6 @@ abstract class _$AppRouter extends RootStackRouter {
         child: OrderViewPageWidget(
           key: args.key,
           order: args.order,
-        ),
-      );
-    },
-    OrderingRoute.name: (routeData) {
-      final args = routeData.argsAs<OrderingRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: OrderingPageWidget(
-          key: args.key,
-          zoneId: args.zoneId,
-          wmFactory: args.wmFactory,
         ),
       );
     },
@@ -353,60 +325,6 @@ class HomeRouteArgs {
 }
 
 /// generated route for
-/// [MapPageWidget]
-class MapRoute extends PageRouteInfo<MapRouteArgs> {
-  MapRoute({
-    Key? key,
-    WidgetModel<ElementaryWidget<IWidgetModel>, ElementaryModel> Function(
-            BuildContext)
-        wmFactory = defaultMapPageWidgetModelFactory,
-    List<PageRouteInfo>? children,
-  }) : super(
-          MapRoute.name,
-          args: MapRouteArgs(
-            key: key,
-            wmFactory: wmFactory,
-          ),
-          initialChildren: children,
-        );
-
-  static const String name = 'MapRoute';
-
-  static const PageInfo<MapRouteArgs> page = PageInfo<MapRouteArgs>(name);
-}
-
-class MapRouteArgs {
-  const MapRouteArgs({
-    this.key,
-    this.wmFactory = defaultMapPageWidgetModelFactory,
-  });
-
-  final Key? key;
-
-  final WidgetModel<ElementaryWidget<IWidgetModel>, ElementaryModel> Function(
-      BuildContext) wmFactory;
-
-  @override
-  String toString() {
-    return 'MapRouteArgs{key: $key, wmFactory: $wmFactory}';
-  }
-}
-
-/// generated route for
-/// [MapTabPage]
-class MapTab extends PageRouteInfo<void> {
-  const MapTab({List<PageRouteInfo>? children})
-      : super(
-          MapTab.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'MapTab';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
-}
-
-/// generated route for
 /// [OrderViewPageWidget]
 class OrderViewRoute extends PageRouteInfo<OrderViewRouteArgs> {
   OrderViewRoute({
@@ -441,52 +359,6 @@ class OrderViewRouteArgs {
   @override
   String toString() {
     return 'OrderViewRouteArgs{key: $key, order: $order}';
-  }
-}
-
-/// generated route for
-/// [OrderingPageWidget]
-class OrderingRoute extends PageRouteInfo<OrderingRouteArgs> {
-  OrderingRoute({
-    Key? key,
-    required int zoneId,
-    WidgetModel<ElementaryWidget<IWidgetModel>, ElementaryModel> Function(
-            BuildContext)
-        wmFactory = defaultOrderingPageWidgetModelFactory,
-    List<PageRouteInfo>? children,
-  }) : super(
-          OrderingRoute.name,
-          args: OrderingRouteArgs(
-            key: key,
-            zoneId: zoneId,
-            wmFactory: wmFactory,
-          ),
-          initialChildren: children,
-        );
-
-  static const String name = 'OrderingRoute';
-
-  static const PageInfo<OrderingRouteArgs> page =
-      PageInfo<OrderingRouteArgs>(name);
-}
-
-class OrderingRouteArgs {
-  const OrderingRouteArgs({
-    this.key,
-    required this.zoneId,
-    this.wmFactory = defaultOrderingPageWidgetModelFactory,
-  });
-
-  final Key? key;
-
-  final int zoneId;
-
-  final WidgetModel<ElementaryWidget<IWidgetModel>, ElementaryModel> Function(
-      BuildContext) wmFactory;
-
-  @override
-  String toString() {
-    return 'OrderingRouteArgs{key: $key, zoneId: $zoneId, wmFactory: $wmFactory}';
   }
 }
 

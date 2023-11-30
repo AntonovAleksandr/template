@@ -197,6 +197,6 @@ class ProfilePageWidgetModel
 
   @override
   void onMyZone() {
-    router.navigate(HomeRoute(children: [MapRoute()]));
+    // router.navigate(HomeRoute(children: [MapRoute()]));
   }
 }

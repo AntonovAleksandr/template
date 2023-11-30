@@ -18,10 +18,6 @@ import 'package:satellite_app/pages/base/register_page/register_page_wm.dart';
 
 import 'package:satellite_app/pages/home_page/home_page_widget.dart';
 import 'package:satellite_app/pages/home_page/home_page_wm.dart';
-import 'package:satellite_app/pages/map_page/map_page_widget.dart';
-import 'package:satellite_app/pages/map_page/map_page_wm.dart';
-import 'package:satellite_app/pages/ordering_page/ordering_page_widget.dart';
-import 'package:satellite_app/pages/ordering_page/ordering_page_wm.dart';
 import 'package:satellite_app/pages/web_view/web_view_page.dart';
 import 'package:satellite_app/pages/orders/order_page.dart';
 import 'package:webview_flutter/webview_flutter.dart';
@@ -38,9 +34,6 @@ class AppRouter extends _$AppRouter {
         AutoRoute(page: AuthRoute.page),
         AutoRoute(page: AuthCodeRoute.page),
         AutoRoute(page: RegisterRoute.page),
-        AutoRoute(
-          page: OrderingRoute.page,
-        ),
         AutoRoute(
           page: HomeRoute.page,
           initial: true,
@@ -64,21 +57,6 @@ class AppRouter extends _$AppRouter {
                 AutoRoute(
                   page: EditProfileRoute.page,
                 ),
-                AutoRoute(
-                  page: OrderViewRoute.page,
-                ),
-                AutoRoute(
-                  page: OrdersRoute.page,
-                ),
-              ],
-            ),
-            AutoRoute(
-              page: MapTab.page,
-              children: [
-                AutoRoute(
-                  page: MapRoute.page,
-                  initial: true,
-                ),
               ],
             ),
           ],
@@ -89,11 +67,6 @@ class AppRouter extends _$AppRouter {
 @RoutePage(name: 'ShowCaseTab')
 class ShowCaseTabPage extends AutoRouter {
   const ShowCaseTabPage({super.key});
-}
-
-@RoutePage(name: 'MapTab')
-class MapTabPage extends AutoRouter {
-  const MapTabPage({super.key});
 }
 
 @RoutePage(name: 'UserProfileTab')

@@ -31,7 +31,6 @@ class _MobilePage extends StatelessWidget {
     return AutoTabsScaffold(
       routes: const [
         ShowCaseTab(),
-        MapTab(),
         UserProfileTab(),
       ],
       bottomNavigationBuilder: (_, tabsRouter) {
@@ -69,7 +68,6 @@ class _WebPage extends StatelessWidget {
       builder: (context, child) {
         const tabs = [
           ShowCaseTab(),
-          MapTab(),
           UserProfileTab(),
         ];
 
