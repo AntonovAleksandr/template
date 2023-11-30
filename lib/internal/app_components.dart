@@ -20,7 +20,7 @@ class AppComponents {
 
   AppComponents._internal();
 
-  final tokenDaData = '6cbb9f2ecf9886a6f52e1bfb7c78ef3e8e05a9ed';
+  final tokenDaData = '603bb84c98131f6cc1c0a20dd1a34f349307b086';
   final Dio dio = Dio();
 
   late final AuthService authService = AuthService(dio);

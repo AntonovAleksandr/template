@@ -10,16 +10,16 @@ import 'package:hotel_writer/pages/base/auth_page/auth_page_widget.dart';
 import 'package:hotel_writer/pages/base/auth_page/auth_page_wm.dart';
 import 'package:hotel_writer/pages/base/edit_profile_page/edit_profile_page_widget.dart';
 import 'package:hotel_writer/pages/base/edit_profile_page/edit_profile_page_wm.dart';
+import 'package:hotel_writer/pages/base/home_page/home_page_wm.dart';
 import 'package:hotel_writer/pages/base/profile_page/profile_page_widget.dart';
 import 'package:hotel_writer/pages/base/profile_page/profile_page_wm.dart';
 import 'package:hotel_writer/pages/base/register_page/register_page_widget.dart';
 import 'package:hotel_writer/pages/base/register_page/register_page_wm.dart';
-
-import 'package:hotel_writer/pages/home_page/home_page_widget.dart';
-import 'package:hotel_writer/pages/home_page/home_page_wm.dart';
+import 'package:hotel_writer/pages/choose_city_page/choose_city_page.dart';
 import 'package:hotel_writer/pages/web_view/web_view_page.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
+import '../pages/base/home_page/home_page_widget.dart';
 import '../pages/base/show_case_page/show_case_page.dart';
 
 part 'app_router.gr.dart';
@@ -29,12 +29,17 @@ class AppRouter extends _$AppRouter {
   @override
   List<AutoRoute> get routes => [
         AutoRoute(page: WebViewerRoute.page),
-        AutoRoute(page: AuthRoute.page),
+        AutoRoute(
+          page: AuthRoute.page,
+        ),
         AutoRoute(page: AuthCodeRoute.page),
         AutoRoute(page: RegisterRoute.page),
         AutoRoute(
-          page: HomeRoute.page,
           initial: true,
+          page: ChooseCityRoute.page,
+        ),
+        AutoRoute(
+          page: HomeRoute.page,
           children: [
             AutoRoute(
               page: ShowCaseTab.page,

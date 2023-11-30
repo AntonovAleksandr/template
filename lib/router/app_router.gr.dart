@@ -37,6 +37,18 @@ abstract class _$AppRouter extends RootStackRouter {
         ),
       );
     },
+    ChooseCityRoute.name: (routeData) {
+      final args = routeData.argsAs<ChooseCityRouteArgs>(
+          orElse: () => const ChooseCityRouteArgs());
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: ChooseCityPageWidget(
+          profile: args.profile,
+          key: args.key,
+          wmFactory: args.wmFactory,
+        ),
+      );
+    },
     EditProfileRoute.name: (routeData) {
       final args = routeData.argsAs<EditProfileRouteArgs>(
           orElse: () => const EditProfileRouteArgs());
@@ -219,6 +231,52 @@ class AuthRouteArgs {
   @override
   String toString() {
     return 'AuthRouteArgs{key: $key, wmFactory: $wmFactory}';
+  }
+}
+
+/// generated route for
+/// [ChooseCityPageWidget]
+class ChooseCityRoute extends PageRouteInfo<ChooseCityRouteArgs> {
+  ChooseCityRoute({
+    Profile? profile,
+    Key? key,
+    WidgetModel<ElementaryWidget<IWidgetModel>, ElementaryModel> Function(
+            BuildContext)
+        wmFactory = defaultChooseCityPageWidgetModelFactory,
+    List<PageRouteInfo>? children,
+  }) : super(
+          ChooseCityRoute.name,
+          args: ChooseCityRouteArgs(
+            profile: profile,
+            key: key,
+            wmFactory: wmFactory,
+          ),
+          initialChildren: children,
+        );
+
+  static const String name = 'ChooseCityRoute';
+
+  static const PageInfo<ChooseCityRouteArgs> page =
+      PageInfo<ChooseCityRouteArgs>(name);
+}
+
+class ChooseCityRouteArgs {
+  const ChooseCityRouteArgs({
+    this.profile,
+    this.key,
+    this.wmFactory = defaultChooseCityPageWidgetModelFactory,
+  });
+
+  final Profile? profile;
+
+  final Key? key;
+
+  final WidgetModel<ElementaryWidget<IWidgetModel>, ElementaryModel> Function(
+      BuildContext) wmFactory;
+
+  @override
+  String toString() {
+    return 'ChooseCityRouteArgs{profile: $profile, key: $key, wmFactory: $wmFactory}';
   }
 }
 
