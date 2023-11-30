@@ -1,4 +1,4 @@
-# satellite_app
+# hotel_writer
 
 A TeamForWin Flutter project for profession-it.  .
 

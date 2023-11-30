@@ -1,6 +1,6 @@
 import 'package:dadata_suggestions/dadata_suggestions.dart';
 import 'package:dio/dio.dart';
-import 'package:satellite_app/domain/entity/dadata/geo_data.dart';
+import 'package:hotel_writer/domain/entity/dadata/geo_data.dart';
 
 class GeolocationDadataRepository {
   GeolocationDadataRepository(this._dadataSuggestions);

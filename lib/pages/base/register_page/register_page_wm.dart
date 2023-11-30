@@ -2,13 +2,13 @@ import 'package:dio/dio.dart';
 import 'package:elementary/elementary.dart';
 
 import 'package:flutter/material.dart';
-import 'package:satellite_app/data/repository/auth_repository.dart';
-import 'package:satellite_app/domain/models/profile.dart';
-import 'package:satellite_app/internal/app_components.dart';
-import 'package:satellite_app/router/app_router.dart';
-import 'package:satellite_app/util/snack_bar_util.dart';
-import 'package:satellite_app/util/value_stream_wrapper.dart';
-import 'package:satellite_app/util/wm_extensions.dart';
+import 'package:hotel_writer/data/repository/auth_repository.dart';
+import 'package:hotel_writer/domain/models/profile.dart';
+import 'package:hotel_writer/internal/app_components.dart';
+import 'package:hotel_writer/router/app_router.dart';
+import 'package:hotel_writer/util/snack_bar_util.dart';
+import 'package:hotel_writer/util/value_stream_wrapper.dart';
+import 'package:hotel_writer/util/wm_extensions.dart';
 import 'register_page_model.dart';
 import 'register_page_widget.dart';
 

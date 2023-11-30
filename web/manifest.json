@@ -1,6 +1,6 @@
 {
-    "name": "satellite_app",
-    "short_name": "satellite_app",
+    "name": "hotel_writer",
+    "short_name": "hotel_writer",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

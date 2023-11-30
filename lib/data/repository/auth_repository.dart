@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
-import 'package:satellite_app/data/service/auth_service.dart';
-import 'package:satellite_app/domain/entity/auth/auth_email_part1_request.dart';
-import 'package:satellite_app/domain/entity/auth/auth_email_part2_request.dart';
-import 'package:satellite_app/domain/entity/auth/auth_email_part2_response.dart';
-import 'package:satellite_app/domain/models/profile.dart';
+import 'package:hotel_writer/data/service/auth_service.dart';
+import 'package:hotel_writer/domain/entity/auth/auth_email_part1_request.dart';
+import 'package:hotel_writer/domain/entity/auth/auth_email_part2_request.dart';
+import 'package:hotel_writer/domain/entity/auth/auth_email_part2_response.dart';
+import 'package:hotel_writer/domain/models/profile.dart';
 
 class AuthRepository {
   AuthRepository(

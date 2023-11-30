@@ -4,7 +4,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:elementary/elementary.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:satellite_app/router/app_router.dart';
+import 'package:hotel_writer/router/app_router.dart';
 
 import 'home_page_wm.dart';
 
@@ -41,11 +41,11 @@ class _MobilePage extends StatelessWidget {
           animationDuration: const Duration(milliseconds: 300),
           destinations: const [
             NavigationDestination(
-              label: 'Статьи',
+              label: 'Акции',
               icon: Icon(Icons.photo_outlined),
             ),
             NavigationDestination(
-              label: 'Заказ',
+              label: 'Поиск',
                icon: Icon(Icons.map),
             ),
             NavigationDestination(
@@ -106,11 +106,11 @@ class _WebPage extends StatelessWidget {
                         labelType: NavigationRailLabelType.all,
                         destinations: const [
                           NavigationRailDestination(
-                            label: Text('Статьи'),
+                            label: Text('Акции'),
                             icon: Icon(Icons.photo_outlined),
                           ),
                           NavigationRailDestination(
-                            label: Text('Заказ'),
+                            label: Text('Поиск'),
                             icon: Icon(Icons.map),
                           ),
                           NavigationRailDestination(

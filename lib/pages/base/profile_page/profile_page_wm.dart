@@ -2,12 +2,12 @@ import 'package:auto_route/auto_route.dart';
 import 'package:elementary/elementary.dart';
 import 'package:flutter/material.dart';
 import 'package:rxdart/rxdart.dart';
-import 'package:satellite_app/data/repository/auth_repository.dart';
-import 'package:satellite_app/domain/models/profile.dart';
-import 'package:satellite_app/domain/use_case/profile_use_case.dart';
-import 'package:satellite_app/internal/app_components.dart';
-import 'package:satellite_app/router/app_router.dart';
-import 'package:satellite_app/util/wm_extensions.dart';
+import 'package:hotel_writer/data/repository/auth_repository.dart';
+import 'package:hotel_writer/domain/models/profile.dart';
+import 'package:hotel_writer/domain/use_case/profile_use_case.dart';
+import 'package:hotel_writer/internal/app_components.dart';
+import 'package:hotel_writer/router/app_router.dart';
+import 'package:hotel_writer/util/wm_extensions.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 import 'profile_page_model.dart';
@@ -191,7 +191,7 @@ class ProfilePageWidgetModel
   @override
   void onMyOrder() {
     onUnauthorisedTap(() {
-      router.push(const OrdersRoute());
+      // router.push(const OrdersRoute());
     });
   }
 

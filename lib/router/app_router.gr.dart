@@ -60,22 +60,6 @@ abstract class _$AppRouter extends RootStackRouter {
         ),
       );
     },
-    OrderViewRoute.name: (routeData) {
-      final args = routeData.argsAs<OrderViewRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: OrderViewPageWidget(
-          key: args.key,
-          order: args.order,
-        ),
-      );
-    },
-    OrdersRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const OrdersPageWidget(),
-      );
-    },
     ProfileRoute.name: (routeData) {
       final args = routeData.argsAs<ProfileRouteArgs>(
           orElse: () => const ProfileRouteArgs());
@@ -322,58 +306,6 @@ class HomeRouteArgs {
   String toString() {
     return 'HomeRouteArgs{key: $key, wmFactory: $wmFactory}';
   }
-}
-
-/// generated route for
-/// [OrderViewPageWidget]
-class OrderViewRoute extends PageRouteInfo<OrderViewRouteArgs> {
-  OrderViewRoute({
-    Key? key,
-    required Order order,
-    List<PageRouteInfo>? children,
-  }) : super(
-          OrderViewRoute.name,
-          args: OrderViewRouteArgs(
-            key: key,
-            order: order,
-          ),
-          initialChildren: children,
-        );
-
-  static const String name = 'OrderViewRoute';
-
-  static const PageInfo<OrderViewRouteArgs> page =
-      PageInfo<OrderViewRouteArgs>(name);
-}
-
-class OrderViewRouteArgs {
-  const OrderViewRouteArgs({
-    this.key,
-    required this.order,
-  });
-
-  final Key? key;
-
-  final Order order;
-
-  @override
-  String toString() {
-    return 'OrderViewRouteArgs{key: $key, order: $order}';
-  }
-}
-
-/// generated route for
-/// [OrdersPageWidget]
-class OrdersRoute extends PageRouteInfo<void> {
-  const OrdersRoute({List<PageRouteInfo>? children})
-      : super(
-          OrdersRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'OrdersRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
 }
 
 /// generated route for

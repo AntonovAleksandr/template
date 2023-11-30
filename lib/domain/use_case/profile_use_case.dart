@@ -1,8 +1,8 @@
-import 'package:satellite_app/data/repository/auth_repository.dart';
-import 'package:satellite_app/data/repository/token_ropository.dart';
-import 'package:satellite_app/domain/models/profile.dart';
-import 'package:satellite_app/util/lifecycle_component.dart';
-import 'package:satellite_app/util/value_stream_wrapper.dart';
+import 'package:hotel_writer/data/repository/auth_repository.dart';
+import 'package:hotel_writer/data/repository/token_ropository.dart';
+import 'package:hotel_writer/domain/models/profile.dart';
+import 'package:hotel_writer/util/lifecycle_component.dart';
+import 'package:hotel_writer/util/value_stream_wrapper.dart';
 
 
 class ProfileUseCase implements LifecycleComponent {

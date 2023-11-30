@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:dio/dio.dart';
-import 'package:satellite_app/domain/models/banner.dart';
-import 'package:satellite_app/domain/url/banner_url.dart';
+import 'package:hotel_writer/domain/models/banner.dart';
+import 'package:hotel_writer/domain/url/banner_url.dart';
 import 'package:retrofit/http.dart';
 
 part 'banner_service.g.dart';

@@ -1,9 +1,9 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:elementary/elementary.dart';
 import 'package:flutter/material.dart';
-import 'package:satellite_app/domain/models/profile.dart';
-import 'package:satellite_app/pages/components/theme_switch.dart';
-import 'package:satellite_app/router/app_router.dart';
+import 'package:hotel_writer/domain/models/profile.dart';
+import 'package:hotel_writer/pages/components/theme_switch.dart';
+import 'package:hotel_writer/router/app_router.dart';
 
 import 'profile_page_wm.dart';
 
@@ -95,7 +95,7 @@ class ProfilePageWidget extends ElementaryWidget<IProfilePageWidgetModel> {
                                 Expanded(
                                   flex: 3,
                                   child: Text(
-                                    'Что бы сталкерить\n на полную катушку,\n зарегистрируйтесь или\n войдите в аккаунт :) ',
+                                    'Что бы администрировать\n на полную катушку,\n зарегистрируйтесь или\n войдите в аккаунт :) ',
                                     style: theme.textTheme.bodyMedium?.copyWith(
                                       color: Theme.of(context)
                                           .colorScheme
